@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.MainActivity">
+
+    <TextView
+        android:id="@+id/tvGet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="No data"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_getData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Get data"
+        app:layout_constraintEnd_toEndOf="@+id/tvGet"
+        app:layout_constraintStart_toStartOf="@+id/tvGet"
+        app:layout_constraintTop_toBottomOf="@+id/tvGet" />
+
+    <EditText
+        android:id="@+id/etSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Put data here"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_getData"
+        app:layout_constraintStart_toStartOf="@+id/btn_getData"
+        app:layout_constraintTop_toBottomOf="@+id/btn_getData" />
+
+
+    <Button
+        android:id="@+id/btn_saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="save data"
+        app:layout_constraintEnd_toEndOf="@+id/etSave"
+        app:layout_constraintStart_toStartOf="@+id/etSave"
+        app:layout_constraintTop_toBottomOf="@+id/etSave" />
+</androidx.constraintlayout.widget.ConstraintLayout>
